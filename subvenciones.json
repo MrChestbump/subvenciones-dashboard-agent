@@ -1,0 +1,48 @@
+{
+  "fecha_actualizacion": "2026-03-12T12:26:43.078679",
+  "total": 6,
+  "subvenciones": [
+    {
+      "titulo": "Subvenciones para la transformación digital de PYMES",
+      "organismo": "MINECO",
+      "fecha_limite": "2026-06-30",
+      "url": "https://www.pap.hacienda.gob.es/bdnstrans/GE/es/index",
+      "fuente": "BDNS"
+    },
+    {
+      "titulo": "Ayudas a la innovación empresarial",
+      "organismo": "CDTI",
+      "fecha_limite": "2026-09-15",
+      "url": "https://www.cdti.es",
+      "fuente": "BDNS"
+    },
+    {
+      "titulo": "Programa NEOTEC - Creación de empresas de base tecnológica",
+      "organismo": "CDTI",
+      "fecha_limite": "2026-12-31",
+      "url": "https://www.cdti.es/neotec",
+      "fuente": "CDTI"
+    },
+    {
+      "titulo": "Ayudas I+D Proyectos de Investigación y Desarrollo",
+      "organismo": "CDTI",
+      "fecha_limite": "2026-10-31",
+      "url": "https://www.cdti.es/ayudas-id",
+      "fuente": "CDTI"
+    },
+    {
+      "titulo": "Horizonte Europa - Cluster 4: Digital, Industria y Espacio",
+      "organismo": "Comisión Europea",
+      "fecha_limite": "2026-09-17",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search",
+      "fuente": "Europa"
+    },
+    {
+      "titulo": "LIFE - Programa para el Medio Ambiente y Acción por el Clima",
+      "organismo": "Comisión Europea",
+      "fecha_limite": "2026-07-20",
+      "url": "https://cinea.ec.europa.eu/life_en",
+      "fuente": "Europa"
+    }
+  ]
+}
