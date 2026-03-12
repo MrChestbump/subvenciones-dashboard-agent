@@ -56,12 +56,15 @@ header h1{font-size:1.6em;color:#fff;font-weight:700;letter-spacing:1px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
 .count-badge{background:#4a9eff;color:#fff;border-radius:10px;padding:1px 7px;font-size:0.7em;margin-left:5px}
+  .refresh-btn{background:#4a9eff;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.75em;margin-left:10px;transition:all 0.2s}
+  .refresh-btn:hover{background:#3a8eef;transform:scale(1.05)}
+  .last-update{font-size:0.7em;color:#888;margin-top:8px;text-align:center}
 </style>
 </head>
 <body>
 <header>
   <h1>&#128202; Dashboard de Subvenciones</h1>
-  <div class="header-info">71 clientes &bull; 47 Sociedades &bull; 24 Personas F&#237;sicas</div>
+  <div class="header-info">71 clientes &bull; 47 Sociedades &bull; 24 Personas F&#237;sicas <button class="refresh-btn" onclick="refreshDashboard()">🔄 Actualizar</button></div>
 </header>
 <div class="main-layout">
   <div class="sidebar">
@@ -71,6 +74,7 @@ header h1{font-size:1.6em;color:#fff;font-weight:700;letter-spacing:1px}
         <button class="filter-tab active" onclick="setFilter('all',this)">Todos <span class="count-badge" id="cntAll">71</span></button>
         <button class="filter-tab" onclick="setFilter('SOC',this)">Sociedades <span class="count-badge" id="cntSoc">47</span></button>
         <button class="filter-tab" onclick="setFilter('FIS',this)">F&#237;sicas <span class="count-badge" id="cntFis">24</span></button>
+              <div class="last-update" id="lastUpdate"></div>
       </div>
     </div>
     <div class="client-list" id="clientList"></div>
@@ -184,7 +188,17 @@ function filterClients() {
   renderList();
 }
 
-window.onload = renderList;
-</script>
+  function updateTimestamp() {
+  const now = new Date();
+  const formatted = now.toLocaleString('es-ES', {dateStyle: 'short', timeStyle: 'short'});
+  document.getElementById('lastUpdate').innerText = `Última actualización: ${formatted}`;
+}
+
+function refreshDashboard() {
+  renderList();
+  updateTimestamp();
+}
+
+window.onload = function() { renderList(); updateTimestamp(); };pt>
 </body>
 </html>
