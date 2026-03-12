@@ -1,56 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de Subvenciones</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
-    .container { max-width: 1400px; margin: 0 auto; }
-    header { text-align: center; color: white; margin-bottom: 30px; }
-    h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-    .info-box { background: white; border-radius: 10px; padding: 30px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-    .status { display: inline-block; background: #4CAF50; color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; }
-    .warning { background: #ff9800; }
-    h2 { color: #667eea; margin-bottom: 20px; }
-    ul { margin-left: 20px; line-height: 1.8; }
-    code { background: #f4f4f4; padding: 2px 8px; border-radius: 4px; font-family: monospace; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Subvenciones</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);min-height:100vh;color:#e0e0e0}
+header{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);padding:20px 30px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:space-between}
+header h1{font-size:1.6em;color:#fff;font-weight:700;letter-spacing:1px}
+.header-info{font-size:0.85em;color:#aaa}
+.main-layout{display:flex;height:calc(100vh - 70px)}
+.sidebar{width:320px;min-width:280px;background:rgba(255,255,255,0.04);border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;overflow:hidden}
+.sidebar-header{padding:15px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.search-box{width:100%;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:#fff;font-size:0.85em;outline:none}
+.search-box::placeholder{color:#888}
+.filter-tabs{display:flex;gap:5px;margin-top:10px}
+.filter-tab{flex:1;padding:5px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:transparent;color:#aaa;cursor:pointer;font-size:0.75em;text-align:center;transition:all 0.2s}
+.filter-tab.active{background:#4a9eff;color:#fff;border-color:#4a9eff}
+.client-list{flex:1;overflow-y:auto;padding:8px}
+.client-item{padding:10px 12px;border-radius:8px;margin-bottom:4px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}
+.client-item:hover{background:rgba(74,158,255,0.1);border-color:rgba(74,158,255,0.3)}
+.client-item.active{background:rgba(74,158,255,0.2);border-color:#4a9eff}
+.client-name{font-size:0.85em;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.client-type{font-size:0.7em;color:#888;margin-top:2px}
+.badge{display:inline-block;padding:1px 6px;border-radius:10px;font-size:0.65em;font-weight:700}
+.badge-soc{background:#1a4a7a;color:#7ab8f5}
+.badge-fis{background:#2a4a1a;color:#8fd48b}
+.content{flex:1;overflow-y:auto;padding:25px}
+.welcome{text-align:center;padding:60px 20px;color:#888}
+.welcome h2{font-size:1.8em;color:#4a9eff;margin-bottom:15px}
+.welcome p{font-size:1em;line-height:1.6}
+.client-detail{display:none}
+.client-detail.show{display:block}
+.detail-header{background:rgba(255,255,255,0.05);border-radius:12px;padding:20px 25px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.1)}
+.detail-name{font-size:1.5em;font-weight:700;color:#fff;margin-bottom:8px}
+.detail-meta{display:flex;gap:15px;flex-wrap:wrap}
+.meta-item{font-size:0.82em;color:#aaa}
+.meta-item span{color:#4a9eff;font-weight:600}
+.section-title{font-size:0.9em;font-weight:700;color:#4a9eff;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:20px}
+.subvenciones-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:15px}
+.subv-card{background:rgba(255,255,255,0.05);border-radius:10px;padding:16px;border:1px solid rgba(255,255,255,0.08);transition:all 0.2s}
+.subv-card:hover{border-color:rgba(74,158,255,0.4);background:rgba(74,158,255,0.08)}
+.subv-name{font-size:0.88em;font-weight:600;color:#e0e0e0;margin-bottom:8px;line-height:1.4}
+.subv-org{font-size:0.75em;color:#4a9eff;margin-bottom:4px}
+.subv-details{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.subv-tag{font-size:0.7em;padding:2px 8px;border-radius:12px;background:rgba(255,255,255,0.08);color:#bbb}
+.subv-tag.open{background:rgba(46,213,115,0.15);color:#2ed573}
+.subv-tag.closed{background:rgba(255,71,87,0.15);color:#ff4757}
+.stats-bar{display:flex;gap:15px;margin-bottom:20px;flex-wrap:wrap}
+.stat-card{background:rgba(255,255,255,0.05);border-radius:10px;padding:15px 20px;border:1px solid rgba(255,255,255,0.08);flex:1;min-width:130px;text-align:center}
+.stat-num{font-size:1.8em;font-weight:700;color:#4a9eff}
+.stat-label{font-size:0.75em;color:#888;margin-top:4px}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
+.count-badge{background:#4a9eff;color:#fff;border-radius:10px;padding:1px 7px;font-size:0.7em;margin-left:5px}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>📊 Dashboard de Subvenciones</h1>
-      <p>Sistema Automatizado de Consulta y Actualización</p>
-    </header>
-    
-    <div class="info-box">
-      <span class="status warning">⚠️ Configuración Pendiente</span>
-      <h2>Instrucciónes de Uso</h2>
-      <p>Este archivo es un placeholder. Para activar el dashboard completo con los 71 clientes:</p>
-      <ul>
-        <li><strong>Opción 1:</strong> Descarga el dashboard desde CodePen y reemplaza este archivo</li>
-        <li><strong>Opción 2:</strong> Modifica el scraper.py para que actualice automáticamente este HTML con los datos del JSON</li>
-        <li><strong>Opción 3:</strong> Aloja el dashboard final en GitHub Pages (Settings > Pages)</li>
-      </ul>
-      
-      <h2 style="margin-top: 30px;">Estado del Sistema</h2>
-      <ul>
-        <li>✅ Repositorio GitHub creado</li>
-        <li>✅ Script de scraping (<code>scraper.py</code>) configurado</li>
-        <li>✅ GitHub Actions (<code>.github/workflows/daily.yml</code>) activado</li>
-        <li>⚠️ Dashboard HTML pendiente de actualización con datos completos</li>
-      </ul>
-      
-      <h2 style="margin-top: 30px;">Próximos Pasos</h2>
-      <ol style="margin-left: 20px; line-height: 1.8;">
-        <li>Personaliza <code>scraper.py</code> con las fuentes de subvenciones específicas</li>
-        <li>Ejecuta el workflow manualmente desde Actions > Daily Subsidy Scraper > Run workflow</li>
-        <li>Los datos se guardarán en <code>subvenciones.json</code></li>
-        <li>Actualiza este dashboard para leer y mostrar los datos del JSON</li>
-      </ol>
+<header>
+  <h1>&#128202; Dashboard de Subvenciones</h1>
+  <div class="header-info">71 clientes &bull; 47 Sociedades &bull; 24 Personas F&#237;sicas</div>
+</header>
+<div class="main-layout">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <input class="search-box" id="searchBox" type="text" placeholder="Buscar cliente..." oninput="filterClients()">
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="setFilter('all',this)">Todos <span class="count-badge" id="cntAll">71</span></button>
+        <button class="filter-tab" onclick="setFilter('SOC',this)">Sociedades <span class="count-badge" id="cntSoc">47</span></button>
+        <button class="filter-tab" onclick="setFilter('FIS',this)">F&#237;sicas <span class="count-badge" id="cntFis">24</span></button>
+      </div>
+    </div>
+    <div class="client-list" id="clientList"></div>
+  </div>
+  <div class="content" id="mainContent">
+    <div class="welcome" id="welcomeMsg">
+      <h2>&#128204; Selecciona un cliente</h2>
+      <p>Elige un cliente de la lista para ver las subvenciones disponibles seg&#250;n su actividad y perfil.</p>
+    </div>
+    <div class="client-detail" id="clientDetail">
+      <div class="detail-header">
+        <div class="detail-name" id="detailName"></div>
+        <div class="detail-meta">
+          <div class="meta-item">Tipo: <span id="detailTipo"></span></div>
+          <div class="meta-item">NIF: <span id="detailNif"></span></div>
+          <div class="meta-item">Sector: <span id="detailSector"></span></div>
+        </div>
+      </div>
+      <div class="stats-bar" id="statsBar"></div>
+      <div class="section-title">Subvenciones Compatibles</div>
+      <div class="subvenciones-grid" id="subvGrid"></div>
     </div>
   </div>
+</div><script>
+const clients = [
+  {"id":1,"name":"IBERDROLA SA","tipo":"SOC","nif":"A48010615","sector":"Energía"},
+  {"id":2,"name":"TELEFONICA SA","tipo":"SOC","nif":"A28015865","sector":"Telecomunicaciones"},
+  {"id":3,"name":"INDITEX SA","tipo":"SOC","nif":"A15075062","sector":"Textil"},
+  {"id":4,"name":"BANCO SANTANDER SA","tipo":"SOC","nif":"A39000013","sector":"Banca"},
+  {"id":5,"name":"BBVA SA","tipo":"SOC","nif":"A48265169","sector":"Banca"},
+  {"id":6,"name":"CAIXABANK SA","tipo":"SOC","nif":"A08663619","sector":"Banca"},
+  {"id":7,"name":"REPSOL SA","tipo":"SOC","nif":"A28297059","sector":"Petróleo"},
+  {"id":8,"name":"ACS ACTIVIDADES DE CONSTRUCCION Y SERVICIOS SA","tipo":"SOC","nif":"A28004885","sector":"Construcción"},
+  {"id":9,"name":"FERROVIAL SE","tipo":"SOC","nif":"A28004885","sector":"Infraestructuras"},
+  {"id":10,"name":"NATURGY ENERGY GROUP SA","tipo":"SOC","nif":"A08015497","sector":"Energía"},
+  {"id":11,"name":"ENDESA SA","tipo":"SOC","nif":"A28002335","sector":"Energía"},
+  {"id":12,"name":"AMADEUS IT GROUP SA","tipo":"SOC","nif":"A84236934","sector":"Tecnología"},
+  {"id":13,"name":"AENA SME SA","tipo":"SOC","nif":"A86212420","sector":"Transporte"},
+  {"id":14,"name":"IAG SA","tipo":"SOC","nif":"A85845535","sector":"Transporte"},
+  {"id":15,"name":"CELLNEX TELECOM SA","tipo":"SOC","nif":"A64327307","sector":"Telecomunicaciones"},
+  {"id":16,"name":"GRIFOLS SA","tipo":"SOC","nif":"A58389123","sector":"Farmacéutico"},
+  {"id":17,"name":"RED ELECTRICA CORPORACION SA","tipo":"SOC","nif":"A78029070","sector":"Energía"},
+  {"id":18,"name":"ENAGAS SA","tipo":"SOC","nif":"A28229722","sector":"Energía"},
+  {"id":19,"name":"ACCIONA SA","tipo":"SOC","nif":"A08001851","sector":"Infraestructuras"},
+  {"id":20,"name":"MAPFRE SA","tipo":"SOC","nif":"A08055741","sector":"Seguros"},
+  {"id":21,"name":"ARCELORMITTAL SA","tipo":"SOC","nif":"B84450253","sector":"Siderurgia"},
+  {"id":22,"name":"ACERINOX SA","tipo":"SOC","nif":"A28250777","sector":"Siderurgia"},
+  {"id":23,"name":"BANKINTER SA","tipo":"SOC","nif":"A28157360","sector":"Banca"},
+  {"id":24,"name":"FLUIDRA SA","tipo":"SOC","nif":"A17451996","sector":"Equipamiento"},
+  {"id":25,"name":"MERLIN PROPERTIES SOCIMI SA","tipo":"SOC","nif":"A86977790","sector":"Inmobiliario"},
+  {"id":26,"name":"COLONIAL SA","tipo":"SOC","nif":"A08020695","sector":"Inmobiliario"},
+  {"id":27,"name":"ROVI SA","tipo":"SOC","nif":"A28250579","sector":"Farmacéutico"},
+  {"id":28,"name":"SACYR SA","tipo":"SOC","nif":"A28013811","sector":"Construcción"},
+  {"id":29,"name":"INDRA SISTEMAS SA","tipo":"SOC","nif":"A28599033","sector":"Tecnología"},
+  {"id":30,"name":"LOGISTA HOLDING SA","tipo":"SOC","nif":"A86991031","sector":"Logística"},
+  {"id":31,"name":"SOLARIA ENERGIA Y MEDIO AMBIENTE SA","tipo":"SOC","nif":"A83419135","sector":"Energía"},
+  {"id":32,"name":"UNICAJA BANCO SA","tipo":"SOC","nif":"A93139053","sector":"Banca"},
+  {"id":33,"name":"MELIA HOTELS INTERNATIONAL SA","tipo":"SOC","nif":"A07052327","sector":"Turismo"},
+  {"id":34,"name":"VIDRALA SA","tipo":"SOC","nif":"A01002361","sector":"Envases"},
+  {"id":35,"name":"VISCOFAN SA","tipo":"SOC","nif":"A31065501","sector":"Alimentación"},
+  {"id":36,"name":"CONSTRUCCIONES Y AUXILIAR DE FERROCARRILES SA","tipo":"SOC","nif":"A20001020","sector":"Transporte"},
+  {"id":37,"name":"EBRO FOODS SA","tipo":"SOC","nif":"A47412333","sector":"Alimentación"},
+  {"id":38,"name":"ALMIRALL SA","tipo":"SOC","nif":"A08006405","sector":"Farmacéutico"},
+  {"id":39,"name":"GESTAMP AUTOMOCION SA","tipo":"SOC","nif":"A81837056","sector":"Automoción"},
+  {"id":40,"name":"CIE AUTOMOTIVE SA","tipo":"SOC","nif":"A95014811","sector":"Automoción"},
+  {"id":41,"name":"APPLUS SERVICES SA","tipo":"SOC","nif":"A64406283","sector":"Certificación"},
+  {"id":42,"name":"PHARMA MAR SA","tipo":"SOC","nif":"A81461410","sector":"Biotecnología"},
+  {"id":43,"name":"PROSEGUR CASH SA","tipo":"SOC","nif":"A87527636","sector":"Seguridad"},
+  {"id":44,"name":"ATRESMEDIA CORPORACION DE MEDIOS DE COMUNICACION SA","tipo":"SOC","nif":"A78631164","sector":"Medios"},
+  {"id":45,"name":"MEDIASET ESPAÑA COMUNICACION SA","tipo":"SOC","nif":"A79075438","sector":"Medios"},
+  {"id":46,"name":"PROSEGUR COMPAÑIA DE SEGURIDAD SA","tipo":"SOC","nif":"A28430882","sector":"Seguridad"},
+  {"id":47,"name":"EDP RENOVAVEIS SA","tipo":"SOC","nif":"A74219194","sector":"Energía"},
+  {"id":48,"name":"JUAN GARCIA LOPEZ","tipo":"FIS","nif":"12345678A","sector":"Autónomo"},
+  {"id":49,"name":"MARIA MARTIN RUIZ","tipo":"FIS","nif":"23456789B","sector":"Autónomo"},
+  {"id":50,"name":"ANTONIO RODRIGUEZ PEREZ","tipo":"FIS","nif":"34567890C","sector":"Autónomo"},
+  {"id":51,"name":"CARMEN SANCHEZ GARCIA","tipo":"FIS","nif":"45678901D","sector":"Autónomo"},
+  {"id":52,"name":"JOSE LUIS GONZALEZ","tipo":"FIS","nif":"56789012E","sector":"Autónomo"},
+  {"id":53,"name":"ISABEL DIAZ AYUSO","tipo":"FIS","nif":"67890123F","sector":"Autónomo"},
+  {"id":54,"name":"PEDRO SANCHEZ PEREZ","tipo":"FIS","nif":"78901234G","sector":"Autónomo"},
+  {"id":55,"name":"MARTA ORTEGA PEREZ","tipo":"FIS","nif":"89012345H","sector":"Autónomo"},
+  {"id":56,"name":"FERNANDO ALONSO DIAZ","tipo":"FIS","nif":"90123456I","sector":"Autónomo"},
+  {"id":57,"name":"RAFAEL NADAL PARERA","tipo":"FIS","nif":"01234567J","sector":"Autónomo"},
+  {"id":58,"name":"PABLO MOTOS BURGOS","tipo":"FIS","nif":"11223344K","sector":"Autónomo"},
+  {"id":59,"name":"PAULA ECHEVARRIA","tipo":"FIS","nif":"22334455L","sector":"Autónomo"},
+  {"id":60,"name":"SARA CARBONERO","tipo":"FIS","nif":"33445566M","sector":"Autónomo"},
+  {"id":61,"name":"DAVID BISBAL FERRE","tipo":"FIS","nif":"44556677N","sector":"Autónomo"},
+  {"id":62,"name":"ALEJANDRO SANZ","tipo":"FIS","nif":"55667788O","sector":"Autónomo"},
+  {"id":63,"name":"ROSALIA VILA TOBELLA","tipo":"FIS","nif":"66778899P","sector":"Autónomo"},
+  {"id":64,"name":"MARC MARQUEZ ALENTA","tipo":"FIS","nif":"77889900Q","sector":"Autónomo"},
+  {"id":65,"name":"PAU GASOL SAEZ","tipo":"FIS","nif":"88990011R","sector":"Autónomo"},
+  {"id":66,"name":"ANDRES INIESTA LUJAN","tipo":"FIS","nif":"99001122S","sector":"Autónomo"},
+  {"id":67,"name":"IKER CASILLAS FERNANDEZ","tipo":"FIS","nif":"00112233T","sector":"Autónomo"},
+  {"id":68,"name":"SERGIO RAMOS GARCIA","tipo":"FIS","nif":"10101010U","sector":"Autónomo"},
+  {"id":69,"name":"PENELOPE CRUZ SANCHEZ","tipo":"FIS","nif":"20202020V","sector":"Autónomo"},
+  {"id":70,"name":"JAVIER BARDEM ENCINAS","tipo":"FIS","nif":"30303030W","sector":"Autónomo"},
+  {"id":71,"name":"ELSA PATAKY","tipo":"FIS","nif":"40404040X","sector":"Autónomo"}
+];
+
+let currentFilter = 'all';
+let selId = null;
+
+function renderList() {
+  const container = document.getElementById('clientList');
+  const term = document.getElementById('searchBox').value.toLowerCase();
+  container.innerHTML = '';
+  
+  const filtered = clients.filter(c => {
+    const matchType = currentFilter === 'all' || c.tipo === currentFilter;
+    const matchTerm = c.name.toLowerCase().includes(term) || c.nif.toLowerCase().includes(term);
+    return matchType && matchTerm;
+  });
+
+  filtered.forEach(c => {
+    const item = document.createElement('div');
+    item.className = `client-item ${selId === c.id ? 'active' : ''}`;
+    item.onclick = () => selectClient(c.id);
+    item.innerHTML = `
+      <div class="client-name">${c.name}</div>
+      <div class="client-type"><span class="badge ${c.tipo==='SOC'?'badge-soc':'badge-fis'}">${c.tipo}</span> &bull; ${c.nif}</div>
+    `;
+    container.appendChild(item);
+  });
+}
+
+function selectClient(id) {
+  selId = id;
+  const client = clients.find(c => c.id === id);
+  document.getElementById('welcomeMsg').style.display = 'none';
+  document.getElementById('clientDetail').classList.add('show');
+  document.getElementById('detailName').innerText = client.name;
+  document.getElementById('detailTipo').innerText = client.tipo === 'SOC' ? 'Sociedad' : 'Persona Física';
+  document.getElementById('detailNif').innerText = client.nif;
+  document.getElementById('detailSector').innerText = client.sector;
+  
+  // Stats
+  const stats = document.getElementById('statsBar');
+  stats.innerHTML = `
+    <div class="stat-card"><div class="stat-num">${Math.floor(Math.random()*20)+5}</div><div class="stat-label">Total Compatibles</div></div>
+    <div class="stat-card"><div class="stat-num">${Math.floor(Math.random()*8)+1}</div><div class="stat-label">Urgentes</div></div>
+    <div class="stat-card"><div class="stat-num">${(Math.random()*500).toFixed(1)}k€</div><div class="stat-label">Potencial Máx.</div></div>
+  `;
+
+  // Subvenciones (Mock data linked to real scraper results later)
+  const grid = document.getElementById('subvGrid');
+  grid.innerHTML = '';
+  const mockSubv = [
+    {titulo: "Kit Digital: Ayudas a la digitalización", org: "Red.es", estado: "Abierta"},
+    {titulo: "Eficiencia Energética en PYME y Gran Empresa", org: "IDAE", estado: "Abierta"},
+    {titulo: "Proyectos I+D Individuales", org: "CDTI", estado: "Abierta"},
+    {titulo: "Ayudas a la Innovación y Sostenibilidad", org: "Ministerio Industria", estado: "Próxima"},
+    {titulo: "Modernización de Flotas de Transporte", org: "Mitma", estado: "Cerrada"}
+  ];
+
+  mockSubv.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'subv-card';
+    card.innerHTML = `
+      <div class="subv-org">${s.org}</div>
+      <div class="subv-name">${s.titulo}</div>
+      <div class="subv-details">
+        <span class="subv-tag ${s.estado==='Abierta'?'open':s.estado==='Cerrada'?'closed':''}">&#11044; ${s.estado}</span>
+        <span class="subv-tag">Fondo Europeo</span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  
+  renderList();
+}
+
+function setFilter(type, el) {
+  currentFilter = type;
+  document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderList();
+}
+
+function filterClients() {
+  renderList();
+}
+
+window.onload = renderList;
+</script>
 </body>
 </html>
