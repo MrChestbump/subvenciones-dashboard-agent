@@ -20,7 +20,7 @@ def match_cliente_subvencion(cliente, subvencion):
     matches = []
     
     # TR341D - Promoción Autoempleo (Autónomos y sociedades < 3 años)
-    if subvencion['codigo'] == 'TR341D':
+    if subvencion['id'] == 'TR341D':
         antiguedad_meses = calcular_antiguedad_meses(cliente['fecha_alta'])
         if antiguedad_meses < 36:  # Menos de 3 años
             estado = 'aplica'
@@ -33,7 +33,7 @@ def match_cliente_subvencion(cliente, subvencion):
             matches.append({'id': 'TR341D', 'estado': estado, 'cuantia': cuantia, 'motivo': motivo})
     
     # TR341Q - Inversión Modernización
-    if subvencion['codigo'] == 'TR341Q':
+    if subvencion['id'] == 'TR341Q':
         # Aplica a autónomos, especialmente CNAEs relacionados con comercio, hostelería, TIC
         cnaes_prioritarios = ['6201', '6202', '4719', '1071', '5610', '4520', '5320']
         if cliente['cnae'] in cnaes_prioritarios or cliente['tipo'] == 'FIS':
@@ -51,21 +51,21 @@ def match_cliente_subvencion(cliente, subvencion):
             matches.append({'id': 'TR341Q', 'estado': estado, 'cuantia': 'Hasta 7.000 60%', 'motivo': motivo})
     
     # TR341R - Conciliación (si tiene empleados o puede contratar)
-    if subvencion['codigo'] == 'TR341R':
+    if subvencion['id'] == 'TR341R':
         if cliente['empleados'] > 0 or cliente['ingresos'] > 100000:
             estado = 'aplica' if cliente['empleados'] >= 2 else 'posible'
             matches.append({'id': 'TR341R', 'estado': estado, 'cuantia': 'Salario sustituto', 
                           'motivo': 'Si contrata sustituto para conciliación.'})
     
     # TR880A - Emprendimiento Reciente (< 2 años)
-    if subvencion['codigo'] == 'TR880A':
+    if subvencion['id'] == 'TR880A':
         antiguedad_meses = calcular_antiguedad_meses(cliente['fecha_alta'])
         if antiguedad_meses < 24 and cliente['tipo'] == 'FIS':
             matches.append({'id': 'TR880A', 'estado': 'aplica', 'cuantia': 'Hasta 12.000€',
                           'motivo': 'Emprendimiento reciente. Programa específico nuevos autónomos.'})
     
     # TR340E - IEBT Base Tecnológica
-    if subvencion['codigo'] == 'TR340E':
+    if subvencion['id'] == 'TR340E':
         cnaes_tecnologicos = ['6201', '6202', '6209', '6311', '6312', '7311', '7220', '3511']
         if cliente['cnae'] in cnaes_tecnologicos:
             estado = 'aplica' if cliente['tipo'] == 'SOC' else 'posible'
@@ -73,7 +73,7 @@ def match_cliente_subvencion(cliente, subvencion):
                           'motivo': 'Si acredita base tecnológica.' if estado == 'posible' else 'Base tecnológica acreditada. I+D+i'})
     
     # PEL - Empleo Diputación A Coruña (municipios < 20k habitantes prioritarios)
-    if subvencion['codigo'] == 'PEL':
+    if subvencion['id'] == 'PEL':
         municipios_prioritarios = ['Narón', 'Sada', 'Arteixo', 'Oleiros', 'Culleredo', 'Cambre']
         if cliente['domicilio'] in municipios_prioritarios:
             estado = 'aplica'
@@ -90,7 +90,7 @@ def match_cliente_subvencion(cliente, subvencion):
             matches.append({'id': 'PEL', 'estado': estado, 'cuantia': cuantia, 'motivo': motivo})
     
     # KIT DIGITAL - Seg III
-    if subvencion['codigo'] == 'KITDIGITAL':
+    if subvencion['id'] == 'KITDIGITAL':
         cnaes_digitales = ['6201', '6202', '4719', '8559', '5610', '7311', '6920']
         if cliente['cnae'] in cnaes_digitales or (cliente['empleados'] < 10 and cliente['tipo'] == 'SOC'):
             estado = 'aplica'
