@@ -2,202 +2,89 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard de Subvenciones</title>
+<title>Dashboard Subvenciones 2026</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);min-height:100vh;color:#e0e0e0}
-header{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);padding:20px 30px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:space-between}
-header h1{font-size:1.6em;color:#fff;font-weight:700;letter-spacing:1px}
-.header-info{font-size:0.85em;color:#aaa}
-.main-layout{display:flex;height:calc(100vh - 70px)}
-.sidebar{width:320px;min-width:280px;background:rgba(255,255,255,0.04);border-right:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;overflow:hidden}
-.sidebar-header{padding:15px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.search-box{width:100%;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);color:#fff;font-size:0.85em;outline:none}
-.search-box::placeholder{color:#888}
-.filter-tabs{display:flex;gap:5px;margin-top:10px}
-.filter-tab{flex:1;padding:5px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:transparent;color:#aaa;cursor:pointer;font-size:0.75em;text-align:center;transition:all 0.2s}
-.filter-tab.active{background:#4a9eff;color:#fff;border-color:#4a9eff}
-.client-list{flex:1;overflow-y:auto;padding:8px}
-.client-item{padding:10px 12px;border-radius:8px;margin-bottom:4px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}
-.client-item:hover{background:rgba(74,158,255,0.1);border-color:rgba(74,158,255,0.3)}
-.client-item.active{background:rgba(74,158,255,0.2);border-color:#4a9eff}
-.client-name{font-size:0.85em;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.client-type{font-size:0.7em;color:#888;margin-top:2px}
-.badge{display:inline-block;padding:1px 6px;border-radius:10px;font-size:0.65em;font-weight:700}
-.badge-soc{background:#1a4a7a;color:#7ab8f5}
-.badge-fis{background:#2a4a1a;color:#8fd48b}
-.content{flex:1;overflow-y:auto;padding:25px}
-.welcome{text-align:center;padding:60px 20px;color:#888}
-.welcome h2{font-size:1.8em;color:#4a9eff;margin-bottom:15px}
-.welcome p{font-size:1em;line-height:1.6}
-.client-detail{display:none}
-.client-detail.show{display:block}
-.detail-header{background:rgba(255,255,255,0.05);border-radius:12px;padding:20px 25px;margin-bottom:20px;border:1px solid rgba(255,255,255,0.1)}
-.detail-name{font-size:1.5em;font-weight:700;color:#fff;margin-bottom:8px}
-.detail-meta{display:flex;gap:15px;flex-wrap:wrap}
-.meta-item{font-size:0.82em;color:#aaa}
-.meta-item span{color:#4a9eff;font-weight:600}
-.section-title{font-size:0.9em;font-weight:700;color:#4a9eff;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;margin-top:20px}
-.subvenciones-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:15px}
-.subv-card{background:rgba(255,255,255,0.05);border-radius:10px;padding:16px;border:1px solid rgba(255,255,255,0.08);transition:all 0.2s}
-.subv-card:hover{border-color:rgba(74,158,255,0.4);background:rgba(74,158,255,0.08)}
-.subv-name{font-size:0.88em;font-weight:600;color:#e0e0e0;margin-bottom:8px;line-height:1.4}
-.subv-org{font-size:0.75em;color:#4a9eff;margin-bottom:4px}
-.subv-details{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-.subv-tag{font-size:0.7em;padding:2px 8px;border-radius:12px;background:rgba(255,255,255,0.08);color:#bbb}
-.subv-tag.open{background:rgba(46,213,115,0.15);color:#2ed573}
-.subv-tag.closed{background:rgba(255,71,87,0.15);color:#ff4757}
-.stats-bar{display:flex;gap:15px;margin-bottom:20px;flex-wrap:wrap}
-.stat-card{background:rgba(255,255,255,0.05);border-radius:10px;padding:15px 20px;border:1px solid rgba(255,255,255,0.08);flex:1;min-width:130px;text-align:center}
-.stat-num{font-size:1.8em;font-weight:700;color:#4a9eff}
-.stat-label{font-size:0.75em;color:#888;margin-top:4px}
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
-.count-badge{background:#4a9eff;color:#fff;border-radius:10px;padding:1px 7px;font-size:0.7em;margin-left:5px}
-  .refresh-btn{background:#4a9eff;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.75em;margin-left:10px;transition:all 0.2s}
-  .refresh-btn:hover{background:#3a8eef;transform:scale(1.05)}
-  .last-update{font-size:0.7em;color:#888;margin-top:8px;text-align:center}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#0f1117;color:#e2e8f0}
+header{background:#1a1f2e;padding:14px 22px;border-bottom:1px solid #2d3748;display:flex;align-items:center;justify-content:space-between}
+header h1{font-size:1.15rem;font-weight:700;color:#63b3ed}
+header p{font-size:0.73rem;color:#718096;margin-top:2px}
+.badge{background:#2d3748;border-radius:20px;padding:4px 11px;font-size:0.68rem;color:#a0aec0}
+.main{display:flex;height:calc(100vh - 56px)}
+.sidebar{width:290px;background:#141821;border-right:1px solid #2d3748;display:flex;flex-direction:column}
+.sh{padding:11px;border-bottom:1px solid #2d3748;position:sticky;top:0;background:#141821}
+.sb{width:100%;background:#1a2035;border:1px solid #2d3748;border-radius:7px;padding:6px 10px;color:#e2e8f0;font-size:0.8rem;outline:none}
+.sb:focus{border-color:#63b3ed}
+.fr{display:flex;gap:4px;margin-top:7px;flex-wrap:wrap}
+.fb{background:#1a2035;border:1px solid #2d3748;color:#a0aec0;border-radius:13px;padding:2px 9px;font-size:0.65rem;cursor:pointer}
+.fb.active,.fb:hover{background:#2b4a7a;border-color:#63b3ed;color:#63b3ed}
+.cl{flex:1;overflow-y:auto;padding:6px}
+.cc{background:#1a2035;border:1px solid #2d3748;border-radius:8px;padding:10px;margin-bottom:5px;cursor:pointer;transition:all .15s}
+.cc:hover{border-color:#4a90d9;background:#1f2a45}
+.cc.sel{border-color:#63b3ed;background:#1e3a5f}
+.cn{font-weight:600;font-size:0.83rem}
+.cm{font-size:0.69rem;color:#718096;margin-top:2px}
+.ct{display:flex;gap:3px;margin-top:5px;flex-wrap:wrap}
+.tag{border-radius:9px;padding:1px 7px;font-size:0.62rem;font-weight:600}
+.ta{background:#1a3a2a;color:#68d391;border:1px solid #2f6b4a}
+.ts{background:#1a2a4a;color:#63b3ed;border:1px solid #2a4a7a}
+.tn{background:#2d2a1acolor:#f6ad55;border:1px solid #6b5a2a}
+.detail{flex:1;overflow-y:auto;padding:16px;background:#0f1117}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#4a5568;text-align:center}
+.ph-icon{font-size:2.8rem;margin-bottom:10px}
+.dh{background:linear-gradient(135deg,#1a2035,#1e3a5f);border-radius:10px;padding:17px;margin-bottom:13px;border:1px solid #2d4a7a}
+.dn{font-size:1.1rem;font-weight:700;color:#63b3ed}
+.di{display:flex;gap:15px;margin-top:8px;flex-wrap:wrap}
+.dii{font-size:0.75rem;color:#a0aec0}
+.dii span{color:#e2e8f0;font-weight:500}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:11px}
+.sc{background:#141821;border-radius:8px;padding:13px;border:1px solid #2d3748}
+.sc.aplica{border-left:4px solid #68d391}
+.sc.posible{border-left:4px solid #f6ad55}
+.sc.no-aplica{border-left:4px solid #fc8181;opacity:.4}
+.sch{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.scn{font-weight:700;font-size:0.85rem}
+.sco{font-size:0.66rem;color:#718096;margin-top:1px}
+.scs{border-radius:13px;padding:2px 8px;font-size:0.64rem;font-weight:700;white-space:nowrap}
+.ss-a{background:#1a3a2a;color:#68d391;border:1px solid #2f6b4a}
+.ss-p{background:#2d2a1a;color:#f6ad55;border:1px solid #6b5a2a}
+.ss-n{background:#2a1a1a;color:#fc8181;border:1px solid #6b2a2a}
+.sr{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #1a2035;font-size:0.74rem}
+.sr:last-child{border-bottom:none}
+.sr label{color:#718096}
+.sr .value{color:#e2e8f0;font-weight:500;text-align:right}
+.cuantia{color:#68d391!important;font-weight:700!important}
+.mb{background:#0f1117;border-radius:5px;padding:7px;margin-top:7px;font-size:0.73rem;color:#a0aec0;border-left:3px solid #63b3ed;line-height:1.5}
+.pl{color:#68d391}.pn{color:#f6ad55}.pu{color:#fc8181;font-weight:700}
+.stitle{font-size:0.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#4a5568;margin:13px 0 7px}
 </style>
 </head>
 <body>
 <header>
-  <h1>&#128202; Dashboard de Subvenciones</h1>
-  <div class="header-info">71 clientes &bull; 47 Sociedades &bull; 24 Personas F&#237;sicas <button class="refresh-btn" onclick="refreshDashboard()">🔄 Actualizar</button></div>
+<div><h1>Dashboard Subvenciones 2026</h1><p>Cruce Clientes x Líneas - Galicia, Diputación A Coruña, Asturias, Estatal</p></div>
+<div class="badge">Mar 2026</div>
 </header>
-<div class="main-layout">
-  <div class="sidebar">
-    <div class="sidebar-header">
-      <input class="search-box" id="searchBox" type="text" placeholder="Buscar cliente..." oninput="filterClients()">
-      <div class="filter-tabs">
-        <button class="filter-tab active" onclick="setFilter('all',this)">Todos <span class="count-badge" id="cntAll">71</span></button>
-        <button class="filter-tab" onclick="setFilter('SOC',this)">Sociedades <span class="count-badge" id="cntSoc">47</span></button>
-        <button class="filter-tab" onclick="setFilter('FIS',this)">F&#237;sicas <span class="count-badge" id="cntFis">24</span></button>
-              <div class="last-update" id="lastUpdate"></div>
-      </div>
-    </div>
-    <div class="client-list" id="clientList"></div>
-  </div>
-  <div class="content" id="mainContent">
-    <div class="welcome" id="welcomeMsg">
-      <h2>&#128204; Selecciona un cliente</h2>
-      <p>Elige un cliente de la lista para ver las subvenciones disponibles seg&#250;n su actividad y perfil.</p>
-    </div>
-    <div class="client-detail" id="clientDetail">
-      <div class="detail-header">
-        <div class="detail-name" id="detailName"></div>
-        <div class="detail-meta">
-          <div class="meta-item">Tipo: <span id="detailTipo"></span></div>
-          <div class="meta-item">NIF: <span id="detailNif"></span></div>
-          <div class="meta-item">Sector: <span id="detailSector"></span></div>
-        </div>
-      </div>
-      <div class="stats-bar" id="statsBar"></div>
-      <div class="section-title">Subvenciones Compatibles</div>
-      <div class="subvenciones-grid" id="subvGrid"></div>
-    </div>
-  </div>
-</div><script>
-const clients = [
-  {"id":1,"name":"ALARCON PRIETO MARIA DEL CARMEN","tipo":"FIS","nif":"28281323V","sector":"Asesoría"},{"id":2,"name":"BAO GOMEZ MARIA ANTONIA","tipo":"FIS","nif":"32426994F","sector":"Asesoría"},{"id":3,"name":"BRAAS CASAS PABLO FRANCISCO","tipo":"FIS","nif":"32772885R","sector":"Asesoría"},{"id":4,"name":"CABOT GIL ADRIANA","tipo":"FIS","nif":"47874514Z","sector":"Asesoría"},{"id":5,"name":"CRESPO FERNANDEZ SERGIO LORENZO","tipo":"FIS","nif":"79319670F","sector":"Asesoría"},{"id":6,"name":"CRESPO LOPEZ ALBERTO JAVIER","tipo":"FIS","nif":"50442431G","sector":"Asesoría"},{"id":7,"name":"DIAZ GARCIA ABEL","tipo":"FIS","nif":"47363714K","sector":"Asesoría"},{"id":8,"name":"DIAZ GARCIA JOSE JUAN","tipo":"FIS","nif":"34888227X","sector":"Asesoría"},{"id":9,"name":"DIAZ TEIJEIRO PEDRO MARIA","tipo":"FIS","nif":"79339103M","sector":"Asesoría"},{"id":10,"name":"FERNANDEZ ALDAO JORGE","tipo":"FIS","nif":"53161737C","sector":"Asesoría"},{"id":11,"name":"GONZALEZ ARVELO MANUEL JESUS","tipo":"FIS","nif":"32972354Z","sector":"Asesoría"},{"id":12,"name":"LAGE FERNANDEZ PAULA","tipo":"FIS","nif":"47386401F","sector":"Asesoría"},{"id":13,"name":"LEBORAN RODRIGUEZ ENRIQUE ANTONIO","tipo":"FIS","nif":"32800039S","sector":"Asesoría"},{"id":14,"name":"LORENZO ALVAREZ INES","tipo":"FIS","nif":"32386684Q","sector":"Asesoría"},{"id":15,"name":"LUX PAZ ERIKA MERCEDES","tipo":"FIS","nif":"47434537G","sector":"Asesoría"},{"id":16,"name":"MIGUEZ VAZQUEZ LUIS PASCUAL","tipo":"FIS","nif":"32747835K","sector":"Asesoría"},{"id":17,"name":"PEREZ LORENZO ROSA MARIA","tipo":"FIS","nif":"46896283L","sector":"Asesoría"},{"id":18,"name":"ROURA BLANCO ANA MARIA","tipo":"FIS","nif":"47389102V","sector":"Asesoría"},{"id":19,"name":"SANCHEZ GONZALEZ LUIS","tipo":"FIS","nif":"76319881Q","sector":"Asesoría"},{"id":20,"name":"TABOADA GARCIA ISABEL","tipo":"FIS","nif":"33241619H","sector":"Asesoría"},{"id":21,"name":"VAZQUEZ LEMA CARLOS","tipo":"FIS","nif":"32797400K","sector":"Asesoría"},{"id":22,"name":"VAZQUEZ VIGO JUAN CARLOS","tipo":"FIS","nif":"32823316Q","sector":"Asesoría"},{"id":23,"name":"VIDAL RODRIGUEZ-SABIO MARIA","tipo":"FIS","nif":"46913415Q","sector":"Asesoría"},{"id":24,"name":"VIDAL-RIOS VAZQUEZ PABLO GONZALO","tipo":"FIS","nif":"32423201D","sector":"Asesoría"},{"id":25,"name":"GUPEMARO SL","tipo":"SOC","nif":"B70416169","sector":"Servicios"},{"id":26,"name":"ALANTIA INGENIERIA SL","tipo":"SOC","nif":"B05386727","sector":"Ingeniería"},{"id":27,"name":"ALDIPA SL","tipo":"SOC","nif":"B15901465","sector":"Servicios"},{"id":28,"name":"ALEN CONNECTED SL","tipo":"SOC","nif":"B06923866","sector":"Tecnología"},{"id":29,"name":"AMN GAIA SERVICES SL","tipo":"SOC","nif":"B70453832","sector":"Servicios"},{"id":30,"name":"ANDIROSA SL","tipo":"SOC","nif":"B15504723","sector":"Servicios"},{"id":31,"name":"AUGASERVI SL","tipo":"SOC","nif":"B15359383","sector":"Servicios"},{"id":32,"name":"CAESITAS SLU","tipo":"SOC","nif":"B70446141","sector":"Servicios"},{"id":33,"name":"CARDIVAZ-3 SL","tipo":"SOC","nif":"B70384631","sector":"Servicios"},{"id":34,"name":"CITROBONUM SL","tipo":"SOC","nif":"B16456964","sector":"Comercio"},{"id":35,"name":"CONMIMO SL","tipo":"SOC","nif":"B15766975","sector":"Servicios"},{"id":36,"name":"CONTABEM SL","tipo":"SOC","nif":"B15108483","sector":"Asesoría"},{"id":37,"name":"CRESPO MACEIRAS SL","tipo":"SOC","nif":"B70263413","sector":"Servicios"},{"id":38,"name":"DECISION CLARA PROPERTIES SL","tipo":"SOC","nif":"B42705061","sector":"Inmobiliario"},{"id":39,"name":"DIAZ MARTINEZ ABOGADOS SLPU","tipo":"SOC","nif":"B56848633","sector":"Legal"},{"id":40,"name":"DNA DIDACTIC SL","tipo":"SOC","nif":"B70379896","sector":"Educación"},{"id":41,"name":"ELABORADOS Y MAQUILAS SL","tipo":"SOC","nif":"B70581657","sector":"Alimentación"},{"id":42,"name":"ENTREMETIDOS SL","tipo":"SOC","nif":"B70576699","sector":"Servicios"},{"id":43,"name":"FACAL BUS SL","tipo":"SOC","nif":"B15652464","sector":"Transporte"},{"id":44,"name":"FORESTAL CRESPO MACEIRAS SL","tipo":"SOC","nif":"B70487798","sector":"Forestal"},{"id":45,"name":"GUAVA BRANDS SL","tipo":"SOC","nif":"B56795354","sector":"Comercio"},{"id":46,"name":"GSV AGRO SL","tipo":"SOC","nif":"B70400932","sector":"Agricultura"},{"id":47,"name":"INTEGRAL ENERGETICA GALLEGA SL","tipo":"SOC","nif":"B70477385","sector":"Energía"},{"id":48,"name":"JAROVA LOGISTICA SL","tipo":"SOC","nif":"B94141256","sector":"Logística"},{"id":49,"name":"LEGUMBRES MORGADE NEGREIRA SLU","tipo":"SOC","nif":"B70512306","sector":"Alimentación"},{"id":50,"name":"LIDERA GALICIA SL","tipo":"SOC","nif":"B19822170","sector":"Servicios"},{"id":51,"name":"LIVING IN CALM CONSULTING SL","tipo":"SOC","nif":"B70464797","sector":"Consultoría"},{"id":52,"name":"MARIA ZAS MOBILIARIO SL","tipo":"SOC","nif":"B15841646","sector":"Comercio"},{"id":53,"name":"MEGOM BETANZOS SL","tipo":"SOC","nif":"B15263312","sector":"Construcción"},{"id":54,"name":"MFL PSICOLOGIA Y FORMACION SL","tipo":"SOC","nif":"B13720453","sector":"Formación"},{"id":55,"name":"MORGADE GESTAL SL","tipo":"SOC","nif":"B15371131","sector":"Hostelería"},{"id":56,"name":"NORMANSYS SL","tipo":"SOC","nif":"B70041066","sector":"Servicios"},{"id":57,"name":"PADEL BEER SL","tipo":"SOC","nif":"B70431762","sector":"Hostelería"},{"id":58,"name":"PILAR MORAN VIESCA SL","tipo":"SOC","nif":"B15723307","sector":"Servicios"},{"id":59,"name":"PROMOCIONES INMOBILIARIAS BUZACOS SL","tipo":"SOC","nif":"B70142765","sector":"Inmobiliario"},{"id":60,"name":"PROMOTORA CONSTRUCTORA CESCAM SL","tipo":"SOC","nif":"B70140579","sector":"Construcción"},{"id":61,"name":"RELATED INVESTMENT SLU","tipo":"SOC","nif":"B56176191","sector":"Inmobiliario"},{"id":62,"name":"SALA ATLANTIC SL","tipo":"SOC","nif":"B26804559","sector":"Hostelería"},{"id":63,"name":"SIEM CONSULT SLU","tipo":"SOC","nif":"B70460506","sector":"Consultoría"},{"id":64,"name":"SUMINISTROS NACIONALES E IMPORTACION SL","tipo":"SOC","nif":"B15064488","sector":"Comercio"},{"id":65,"name":"TAKE TWO GAL SL","tipo":"SOC","nif":"B56510233","sector":"Servicios"},{"id":66,"name":"TALLERES NOVO E HIJOS SL","tipo":"SOC","nif":"B15341175","sector":"Industria"},{"id":67,"name":"TRAPERIA PATRIMONIAL SL","tipo":"SOC","nif":"B42711929","sector":"Inmobiliario"},{"id":68,"name":"VEGASTUR CARNES ROXAS SL","tipo":"SOC","nif":"B74269655","sector":"Alimentación"},{"id":69,"name":"ZENTOASESORAMIENTO SLU","tipo":"SOC","nif":"B56957293","sector":"Asesoría"},{"id":70,"name":"ZONGALON SL","tipo":"SOC","nif":"B70422670","sector":"Servicios"},{"id":71,"name":"ZULIGAL SERVICIOS SL","tipo":"SOC","nif":"B13640628","sector":"Servicios"}
-];
-
-
-
-let currentFilter = 'all';
-let selId = null;
-
-function renderList() {
-  const container = document.getElementById('clientList');
-  const term = document.getElementById('searchBox').value.toLowerCase();
-  container.innerHTML = '';
-  
-  const filtered = clients.filter(c => {
-    const matchType = currentFilter === 'all' || c.tipo === currentFilter;
-    const matchTerm = c.name.toLowerCase().includes(term) || c.nif.toLowerCase().includes(term);
-    return matchType && matchTerm;
-  });
-
-  filtered.forEach(c => {
-    const item = document.createElement('div');
-    item.className = `client-item ${selId === c.id ? 'active' : ''}`;
-    item.onclick = () => selectClient(c.id);
-    item.innerHTML = `
-      <div class="client-name">${c.name}</div>
-      <div class="client-type"><span class="badge ${c.tipo==='SOC'?'badge-soc':'badge-fis'}">${c.tipo}</span> &bull; ${c.nif}</div>
-    `;
-    container.appendChild(item);
-  });
-}
-
-function selectClient(id) {
-  selId = id;
-  const client = clients.find(c => c.id === id);
-  document.getElementById('welcomeMsg').style.display = 'none';
-  document.getElementById('clientDetail').classList.add('show');
-  document.getElementById('detailName').innerText = client.name;
-  document.getElementById('detailTipo').innerText = client.tipo === 'SOC' ? 'Sociedad' : 'Persona Física';
-  document.getElementById('detailNif').innerText = client.nif;
-  document.getElementById('detailSector').innerText = client.sector;
-  
-  // Stats
-  const stats = document.getElementById('statsBar');
-  stats.innerHTML = `
-    <div class="stat-card"><div class="stat-num">${Math.floor(Math.random()*20)+5}</div><div class="stat-label">Total Compatibles</div></div>
-    <div class="stat-card"><div class="stat-num">${Math.floor(Math.random()*8)+1}</div><div class="stat-label">Urgentes</div></div>
-    <div class="stat-card"><div class="stat-num">${(Math.random()*500).toFixed(1)}k€</div><div class="stat-label">Potencial Máx.</div></div>
-  `;
-
-  // Subvenciones (Mock data linked to real scraper results later)
-  const grid = document.getElementById('subvGrid');
-  grid.innerHTML = '';
-  const mockSubv = [
-    {titulo: "Kit Digital: Ayudas a la digitalización", org: "Red.es", estado: "Abierta"},
-    {titulo: "Eficiencia Energética en PYME y Gran Empresa", org: "IDAE", estado: "Abierta"},
-    {titulo: "Proyectos I+D Individuales", org: "CDTI", estado: "Abierta"},
-    {titulo: "Ayudas a la Innovación y Sostenibilidad", org: "Ministerio Industria", estado: "Próxima"},
-    {titulo: "Modernización de Flotas de Transporte", org: "Mitma", estado: "Cerrada"}
-  ];
-
-  mockSubv.forEach(s => {
-    const card = document.createElement('div');
-    card.className = 'subv-card';
-    card.innerHTML = `
-      <div class="subv-org">${s.org}</div>
-      <div class="subv-name">${s.titulo}</div>
-      <div class="subv-details">
-        <span class="subv-tag ${s.estado==='Abierta'?'open':s.estado==='Cerrada'?'closed':''}">&#11044; ${s.estado}</span>
-        <span class="subv-tag">Fondo Europeo</span>
-      </div>
-    `;
-    grid.appendChild(card);
-  });
-  
-  }
-
-function setFilter(type, el) {
-  currentFilter = type;
-  document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-  renderList();
-}
-
-function filterClients() {
-  renderList();
-}
-
-  function updateTimestamp() {
-  const now = new Date();
-  const formatted = now.toLocaleString('es-ES', {dateStyle: 'short', timeStyle: 'short'});
-  document.getElementById('lastUpdate').innerText = `Última actualización: ${formatted}`;
-}
-
-function refreshDashboard() {
-  renderList();
-  updateTimestamp();
-}
-
-window.onload = function() { renderList(); updateTimestamp(); };</script>
+<div class="main">
+<div class="sidebar">
+<div class="sh">
+<input class="sb" id="srch" placeholder="Buscar empresa o NIF..." oninput="fil()">
+<div class="fr">
+<button class="fb active" onclick="setF('todos',this)">Todos</button>
+<button class="fb" onclick="setF('autonomo',this)">Autónomos</button>
+<button class="fb" onclick="setF('sociedad',this)">Sociedades</button>
+<button class="fb" onclick="setF('xunta',this)">Xunta</button>
+<button class="fb" onclick="setF('pel',this)">PEL</button>
+<button class="fb" onclick="setF('idepa',this)">IDEPA</button>
+<button class="fb" onclick="setF('kit',this)">Kit Digital</button>
+</div>
+</div>
+<div class="cl" id="clist"></div>
+</div>
+<div class="detail" id="dp">
+<div class="ph"><div class="ph-icon">🔍</div><h2>Selecciona una empresa</h2><p style="margin-top:8px;font-size:0.8rem">Haz clic en cualquier cliente para ver sus subvenciones aplicables</p></div>
+</div>
+</div>
+<script>var FA='todos',selId=null;var SI={TR341D:{n:'TR341D-Promoción Autoempleo',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'50-70%',m:'Hasta 12.000€ cuotas SS'},TR341Q:{n:'TR341Q-Inversión Modernización',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'60%',m:'Hasta 7.000€'},TR341R:{n:'TR341R-Conciliación',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'50%',m:'Subvención salario sustituto'},TR340E:{n:'TR340E-IEBT Base Tecnológica',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'startup',i:'Variable',m:'Cuantías variables I+D+i'},TR353D:{n:'TR353D-Transmisión Negocio',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'transmision',i:'---',m:'Hasta 30.000€'},TR880A:{n:'TR880A-Emprendimiento Reciente',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'startup',i:'Variable',m:'Hasta 12.000€'},PEL:{n:'PEL Empleo 2026',o:'Diputación A Coruña',p:'Vigente 2026',ptpn:'empleo',i:'60% costes salariales',m:'Hasta 15.000€/contrato'},KITDIGITAL:{n:'Kit Digital Seg.III',o:'Red.es Ministerio',p:'Pendiente 2026',ptpn:'digital',i:'100% bonos',m:'Hasta 12.000€'},IGAPE:{n:'IGAPE-Internacionalización',o:'IGAPE Xunta',p:'Pendiente DOG',ptpn:'internacional',i:'40-50%',m:'50% costes intern.'}};var CL=[{id:1,n:'GONZALEZ ARVELO MANUEL JESUS',nif:'32972354Z',t:'autonomo',c:'6201-Prog.Informática',d:'A Coruña',tags:['xunta','pel','kit'],nota:'Alta 16/10/2023',s:[{id:'TR341D',e:'aplica',q:'7.500-12.000€',m:'Alta oct 2023. Menos de 3 años. Subvención inicio/cuotas SS.'},{id:'TR880A',e:'aplica',q:'Hasta 12.000€',m:'Emprendimiento reciente. Programa específico nuevos autónomos.'},{id:'TR341Q',e:'posible',q:'Hasta 7.000 60%',m:'Si invierte en TIC o software.'},{id:'PEL',e:'posible',q:'10.000-12.000€',m:'Si contrata indefinido en A Coruña.'},{id:'KITDIGITAL',e:'aplica',q:'Hasta 12.000€',m:'CNAE 6201 IT. CRM, ciberseguridad, web.'}]},{id:2,n:'SALA ATLANTIC S.L.',nif:'B26804559',t:'sociedad',c:'9329-Act.Recreativas',d:'Narón',tags:['xunta','pel'],nota:'Alta 09/03/2026',s:[{id:'TR341D',e:'aplica',q:'Cuotas SS 1ª contrat.',m:'Sociedad nueva mar 2026. Primera contratación o inversión inicial.'},{id:'TR340E',e:'posible',q:'Variable',m:'Si acredita base tecnológica.'},{id:'PEL',e:'aplica',q:'Hasta 12.000€',m:'Narón menos 20k hab. Contratación indefinida 2026.'}]},{id:3,n:'GUAVA BRANDS S.L',nif:'B56795354',t:'sociedad',c:'45114791-Comercio',d:'A Coruña',tags:['xunta','pel','kit'],nota:'Alta 10/01/2024',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión digitalización comercio, e-commerce, TPV.'},{id:'PEL',e:'posible',q:'Hasta 10.000€',m:'Si contrata indefinido con incremento empleo neto.'},{id:'KITDIGITAL',e:'posible',q:'Hasta 12.000€',m:'Si menos de 10 empleados. E-commerce, SEO.'}]},{id:4,n:'MFL PSICOLOGIA Y FORMACION S.L',nif:'B13720453',t:'sociedad',c:'Servicios prof.',d:'A Coruña',tags:['xunta','kit'],nota:'Alta 15/05/2023',s:[{id:'TR341D',e:'aplica',q:'Hasta 12.000€',m:'Menos de 3 años desde alta.'},{id:'TR341R',e:'aplica',q:'Salario sustituto',m:'Si contrata sustituto para conciliación.'},{id:'KITDIGITAL',e:'aplica',q:'Hasta 12.000€',m:'Aula virtual, gestión alumnos, LMS.'}]},{id:5,n:'BAO GOMEZ MARIA ANTONIA',nif:'32426994F',t:'autonomo',c:'8121-Limpieza',d:'Sada',tags:['xunta','pel'],nota:'Ingresos 133k',s:[{id:'TR341R',e:'aplica',q:'Salario sustituto',m:'Si contrata sustituto para conciliación.'},{id:'PEL',e:'aplica',q:'Hasta 12.000€',m:'Sada menos 20k hab. Contratación limpiador indefinido.'}]},{id:6,n:'CABOT GIL ADRIANA',nif:'47874514Z',t:'autonomo',c:'10715629-Panadería',d:'Arteixo',tags:['xunta','pel'],nota:'Ingresos 205k. Alta 2011',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión maquinaria panadería o equipamiento hostelería.'},{id:'PEL',e:'aplica',q:'Hasta 10.000€',m:'Arteixo. Contratación panadero o dependiente indefinido.'}]},{id:7,n:'FERNANDEZ ALDAO JORGE',nif:'53161737C',t:'autonomo',c:'53204741-Mensajería',d:'Arteixo',tags:['xunta','pel'],nota:'Doble actividad. Alta 2014',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión vehículos mensajería o TIC comercio.'},{id:'TR341R',e:'posible',q:'Salario sustituto',m:'Si contrata para conciliación.'},{id:'PEL',e:'aplica',q:'Hasta 10.000€',m:'Arteixo. Contratación repartidor indefinido.'}]}];function fil(){render()}function setF(f,b){FA=f;document.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}function render(){var q=document.getElementById('srch').value.toLowerCase();var h='';var list=CL.filter(function(c){var mq=!q||(c.n.toLowerCase().indexOf(q)>-1|c.nif.toLowerCase().indexOf(q)>-1);var mf=FA=='todos'||FA=='autonomo'&&c.t=='autonomo'||FA=='sociedad'&&c.t=='sociedad'||c.tags.indexOf(FA)>-1;return mq&&mf});list.forEach(function(c){var tg=c.t=='autonomo'?'<span class="tag ta">Autónomo</span>':'<span class="tag ts">Sociedad</span>';tg+='<span class="tag tn">'+c.s.length+' subv.</span>';h+='<div class="cc'+(selId==c.id?' sel':'')+'" onclick="sel('+c.id+')"><div class="cn">'+c.n+'</div><div class="cm">'+c.nif+' • '+c.d+'</div><div class="ct">'+tg+'</div></div>'});if(!h)h='<div style="padding:16px;text-align:center;color:#4a5568">Sin resultados</div>';document.getElementById('clist').innerHTML=h}function sel(id){selId=id;render();var c=CL.filter(function(x){return x.id==id})[0];if(!c)return;var h='<div class="dh"><div class="dn">'+c.n+'</div><div class="di"><div class="dii">NIF: <span>'+c.nif+'</span></div><div class="dii">Domicilio: <span>'+c.d+'</span></div><div class="dii">Actividad: <span>'+c.c+'</span></div><div class="dii">Nota: <span>'+c.nota+'</span></div></div></div>';h+='<div class="stitle">Subvenciones ('+c.s.length+')</div><div class="sg">';c.s.forEach(function(sv){var info=SI[sv.id];if(!info){info={n:sv.id,o:'---',p:'---',ptpn:'---',i:'---',m:'---'}}var sc=sv.e=='aplica'?'aplica':(sv.e=='posible'?'posible':'no-aplica');var sl=sv.e=='aplica'?'ss-a':(sv.e=='posible'?'ss-p':'ss-n');var sl2=sv.e=='aplica'?'Aplica':'Condicionado';h+='<div class="sc '+sc+'"><div class="sch"><div><div class="scn">'+info.n+'</div><div class="sco">'+info.o+'</div></div><span class="scs '+sl+'">'+sl2+'</span></div><div class="sr"><label>Cuantía</label><value class="cuantia">'+sv.q+'</value></div><div class="sr"><label>Plazo</label><value>'+info.p+'</value></div><div class="sr"><label>Intensidad</label><value>'+info.i+'</value></div><div class="mb">'+sv.m+'</div></div>'});h+='</div>';document.getElementById('dp').innerHTML=h}render();
+</script>
 </body>
 </html>
