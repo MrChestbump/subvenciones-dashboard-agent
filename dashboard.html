@@ -84,7 +84,69 @@ header p{font-size:0.73rem;color:#718096;margin-top:2px}
 <div class="ph"><div class="ph-icon">🔍</div><h2>Selecciona una empresa</h2><p style="margin-top:8px;font-size:0.8rem">Haz clic en cualquier cliente para ver sus subvenciones aplicables</p></div>
 </div>
 </div>
-<script>var FA='todos',selId=null;var SI={TR341D:{n:'TR341D-Promoción Autoempleo',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'50-70%',m:'Hasta 12.000€ cuotas SS'},TR341Q:{n:'TR341Q-Inversión Modernización',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'60%',m:'Hasta 7.000€'},TR341R:{n:'TR341R-Conciliación',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'autonomo',i:'50%',m:'Subvención salario sustituto'},TR340E:{n:'TR340E-IEBT Base Tecnológica',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'startup',i:'Variable',m:'Cuantías variables I+D+i'},TR353D:{n:'TR353D-Transmisión Negocio',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'transmision',i:'---',m:'Hasta 30.000€'},TR880A:{n:'TR880A-Emprendimiento Reciente',o:'Xunta de Galicia',p:'30/09/2026',ptpl:'startup',i:'Variable',m:'Hasta 12.000€'},PEL:{n:'PEL Empleo 2026',o:'Diputación A Coruña',p:'Vigente 2026',ptpn:'empleo',i:'60% costes salariales',m:'Hasta 15.000€/contrato'},KITDIGITAL:{n:'Kit Digital Seg.III',o:'Red.es Ministerio',p:'Pendiente 2026',ptpn:'digital',i:'100% bonos',m:'Hasta 12.000€'},IGAPE:{n:'IGAPE-Internacionalización',o:'IGAPE Xunta',p:'Pendiente DOG',ptpn:'internacional',i:'40-50%',m:'50% costes intern.'}};var CL=[{id:1,n:'GONZALEZ ARVELO MANUEL JESUS',nif:'32972354Z',t:'autonomo',c:'6201-Prog.Informática',d:'A Coruña',tags:['xunta','pel','kit'],nota:'Alta 16/10/2023',s:[{id:'TR341D',e:'aplica',q:'7.500-12.000€',m:'Alta oct 2023. Menos de 3 años. Subvención inicio/cuotas SS.'},{id:'TR880A',e:'aplica',q:'Hasta 12.000€',m:'Emprendimiento reciente. Programa específico nuevos autónomos.'},{id:'TR341Q',e:'posible',q:'Hasta 7.000 60%',m:'Si invierte en TIC o software.'},{id:'PEL',e:'posible',q:'10.000-12.000€',m:'Si contrata indefinido en A Coruña.'},{id:'KITDIGITAL',e:'aplica',q:'Hasta 12.000€',m:'CNAE 6201 IT. CRM, ciberseguridad, web.'}]},{id:2,n:'SALA ATLANTIC S.L.',nif:'B26804559',t:'sociedad',c:'9329-Act.Recreativas',d:'Narón',tags:['xunta','pel'],nota:'Alta 09/03/2026',s:[{id:'TR341D',e:'aplica',q:'Cuotas SS 1ª contrat.',m:'Sociedad nueva mar 2026. Primera contratación o inversión inicial.'},{id:'TR340E',e:'posible',q:'Variable',m:'Si acredita base tecnológica.'},{id:'PEL',e:'aplica',q:'Hasta 12.000€',m:'Narón menos 20k hab. Contratación indefinida 2026.'}]},{id:3,n:'GUAVA BRANDS S.L',nif:'B56795354',t:'sociedad',c:'45114791-Comercio',d:'A Coruña',tags:['xunta','pel','kit'],nota:'Alta 10/01/2024',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión digitalización comercio, e-commerce, TPV.'},{id:'PEL',e:'posible',q:'Hasta 10.000€',m:'Si contrata indefinido con incremento empleo neto.'},{id:'KITDIGITAL',e:'posible',q:'Hasta 12.000€',m:'Si menos de 10 empleados. E-commerce, SEO.'}]},{id:4,n:'MFL PSICOLOGIA Y FORMACION S.L',nif:'B13720453',t:'sociedad',c:'Servicios prof.',d:'A Coruña',tags:['xunta','kit'],nota:'Alta 15/05/2023',s:[{id:'TR341D',e:'aplica',q:'Hasta 12.000€',m:'Menos de 3 años desde alta.'},{id:'TR341R',e:'aplica',q:'Salario sustituto',m:'Si contrata sustituto para conciliación.'},{id:'KITDIGITAL',e:'aplica',q:'Hasta 12.000€',m:'Aula virtual, gestión alumnos, LMS.'}]},{id:5,n:'BAO GOMEZ MARIA ANTONIA',nif:'32426994F',t:'autonomo',c:'8121-Limpieza',d:'Sada',tags:['xunta','pel'],nota:'Ingresos 133k',s:[{id:'TR341R',e:'aplica',q:'Salario sustituto',m:'Si contrata sustituto para conciliación.'},{id:'PEL',e:'aplica',q:'Hasta 12.000€',m:'Sada menos 20k hab. Contratación limpiador indefinido.'}]},{id:6,n:'CABOT GIL ADRIANA',nif:'47874514Z',t:'autonomo',c:'10715629-Panadería',d:'Arteixo',tags:['xunta','pel'],nota:'Ingresos 205k. Alta 2011',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión maquinaria panadería o equipamiento hostelería.'},{id:'PEL',e:'aplica',q:'Hasta 10.000€',m:'Arteixo. Contratación panadero o dependiente indefinido.'}]},{id:7,n:'FERNANDEZ ALDAO JORGE',nif:'53161737C',t:'autonomo',c:'53204741-Mensajería',d:'Arteixo',tags:['xunta','pel'],nota:'Doble actividad. Alta 2014',s:[{id:'TR341Q',e:'aplica',q:'Hasta 7.000 60%',m:'Inversión vehículos mensajería o TIC comercio.'},{id:'TR341R',e:'posible',q:'Salario sustituto',m:'Si contrata para conciliación.'},{id:'PEL',e:'aplica',q:'Hasta 10.000€',m:'Arteixo. Contratación repartidor indefinido.'}]}];function fil(){render()}function setF(f,b){FA=f;document.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}function render(){var q=document.getElementById('srch').value.toLowerCase();var h='';var list=CL.filter(function(c){var mq=!q||(c.n.toLowerCase().indexOf(q)>-1|c.nif.toLowerCase().indexOf(q)>-1);var mf=FA=='todos'||FA=='autonomo'&&c.t=='autonomo'||FA=='sociedad'&&c.t=='sociedad'||c.tags.indexOf(FA)>-1;return mq&&mf});list.forEach(function(c){var tg=c.t=='autonomo'?'<span class="tag ta">Autónomo</span>':'<span class="tag ts">Sociedad</span>';tg+='<span class="tag tn">'+c.s.length+' subv.</span>';h+='<div class="cc'+(selId==c.id?' sel':'')+'" onclick="sel('+c.id+')"><div class="cn">'+c.n+'</div><div class="cm">'+c.nif+' • '+c.d+'</div><div class="ct">'+tg+'</div></div>'});if(!h)h='<div style="padding:16px;text-align:center;color:#4a5568">Sin resultados</div>';document.getElementById('clist').innerHTML=h}function sel(id){selId=id;render();var c=CL.filter(function(x){return x.id==id})[0];if(!c)return;var h='<div class="dh"><div class="dn">'+c.n+'</div><div class="di"><div class="dii">NIF: <span>'+c.nif+'</span></div><div class="dii">Domicilio: <span>'+c.d+'</span></div><div class="dii">Actividad: <span>'+c.c+'</span></div><div class="dii">Nota: <span>'+c.nota+'</span></div></div></div>';h+='<div class="stitle">Subvenciones ('+c.s.length+')</div><div class="sg">';c.s.forEach(function(sv){var info=SI[sv.id];if(!info){info={n:sv.id,o:'---',p:'---',ptpn:'---',i:'---',m:'---'}}var sc=sv.e=='aplica'?'aplica':(sv.e=='posible'?'posible':'no-aplica');var sl=sv.e=='aplica'?'ss-a':(sv.e=='posible'?'ss-p':'ss-n');var sl2=sv.e=='aplica'?'Aplica':'Condicionado';h+='<div class="sc '+sc+'"><div class="sch"><div><div class="scn">'+info.n+'</div><div class="sco">'+info.o+'</div></div><span class="scs '+sl+'">'+sl2+'</span></div><div class="sr"><label>Cuantía</label><value class="cuantia">'+sv.q+'</value></div><div class="sr"><label>Plazo</label><value>'+info.p+'</value></div><div class="sr"><label>Intensidad</label><value>'+info.i+'</value></div><div class="mb">'+sv.m+'</div></div>'});h+='</div>';document.getElementById('dp').innerHTML=h}render();
+<script>
+// Variables globales
+var FA='todos',selId=null;
+var CL=[];
+var SI={};
+
+// Cargar datos dinámicamente
+fetch('clientes_matched.json')
+  .then(response => response.json())
+  .then(data => {
+    // Los datos vienen como array de clientes
+    CL = data.map((cliente, index) => {
+      return {
+        id: index + 1,
+        n: cliente.nombre,
+        nif: cliente.nif,
+        t: cliente.tipo,
+        c: cliente.cnae,
+        d: cliente.domicilio,
+        tags: cliente.tags,
+        nota: cliente.nota,
+        s: cliente.subvenciones.map(sub => {
+          return {
+            id: sub.id,
+            e: sub.estado,
+            q: sub.cuantia,
+            m: sub.motivo
+          };
+        })
+      };
+    });
+    
+    // Cargar info de subvenciones
+    return fetch('subvenciones.json');
+  })
+  .then(response => response.json())
+  .then(subData => {
+    // Crear diccionario de subvenciones
+    subData.subvenciones.forEach(sub => {
+      SI[sub.id] = {
+        n: sub.titulo,
+        o: sub.organismo,
+        p: sub.fecha_limite,
+        i: sub.intensidad,
+        m: sub.cuantia_max
+      };
+    });
+    
+    // Renderizar la UI
+    render();
+  })
+  .catch(error => {
+    console.error('Error cargando datos:', error);
+    CL = [];
+    render();
+  });
+
+// Funciones de UI
+function fil(){render()}
+function setF(f,b){FA=f;document.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}
+function render(){var q=document.getElementById('srch').value.toLowerCase();var h='';var list=CL.filter(function(c){var mq=!q||(c.n.toLowerCase().indexOf(q)>-1||c.nif.toLowerCase().indexOf(q)>-1);var mf=FA=='todos'||FA=='autonomo'&&c.t=='autonomo'||FA=='sociedad'&&c.t=='sociedad'||c.tags.indexOf(FA)>-1;return mq&&mf});list.forEach(function(c){var tg=c.t=='autonomo'?'<span class="tag ta">Autónomo</span>':'<span class="tag ts">Sociedad</span>';tg+='<span class="tag tn">'+c.s.length+' subv.</span>';h+='<div class="cc'+(selId==c.id?' sel':'')+'" onclick="sel('+c.id+')"><div class="cn">'+c.n+'</div><div class="cm">'+c.nif+' • '+c.d+'</div><div class="ct">'+tg+'</div></div>'});if(!h)h='<div style="padding:16px;text-align:center;color:#4a5568">Sin resultados</div>';document.getElementById('clist').innerHTML=h}
+function sel(id){selId=id;render();var c=CL.filter(function(x){return x.id==id})[0];if(!c)return;var h='<div class="dh"><div class="dn">'+c.n+'</div><div class="di"><div class="dii">NIF: <span>'+c.nif+'</span></div><div class="dii">Domicilio: <span>'+c.d+'</span></div><div class="dii">Actividad: <span>'+c.c+'</span></div><div class="dii">Nota: <span>'+c.nota+'</span></div></div></div>';h+='<div class="stitle">Subvenciones ('+c.s.length+')</div><div class="sg">';c.s.forEach(function(sv){var info=SI[sv.id];if(!info){info={n:sv.id,o:'---',p:'---',i:'---',m:'---'}}var sc=sv.e=='aplica'?'aplica':(sv.e=='posible'?'posible':'no-aplica');var sl=sv.e=='aplica'?'ss-a':(sv.e=='posible'?'ss-p':'ss-n');var sl2=sv.e=='aplica'?'Aplica':'Condicionado';h+='<div class="sc '+sc+'"><div class="sch"><div><div class="scn">'+info.n+'</div><div class="sco">'+info.o+'</div></div><span class="scs '+sl+'">'+sl2+'</span></div><div class="sr"><label>Cuantía</label><value class="cuantia">'+sv.q+'</value></div><div class="sr"><label>Plazo</label><value>'+info.p+'</value></div><div class="sr"><label>Intensidad</label><value>'+info.i+'</value></div><div class="mb">'+sv.m+'</div></div>'});h+='</div>';document.getElementById('dp').innerHTML=h}
+render();
 </script>
 </body>
 </html>
