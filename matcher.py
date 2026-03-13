@@ -111,10 +111,13 @@ def match_cliente_subvencion(cliente, subvencion):
 resultados = []
 for cliente in clientes:
     subvenciones_cliente = []
-    for subvencion in subvenciones:
-        matches = match_cliente_subvencion(cliente, subvencion)
-        subvenciones_cliente.extend(matches)
-    
+    subvenciones_cliente = match_cliente_subvencion(cliente, {'id': 'TR341D'})
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'TR341Q'}))
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'TR341R'}))
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'TR880A'}))
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'TR340E'}))
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'PEL'}))
+    subvenciones_cliente.extend(match_cliente_subvencion(cliente, {'id': 'KITDIGITAL'}))    
     # Solo incluir clientes con al menos una subvención aplicable
     if subvenciones_cliente:
         # Determinar tags
