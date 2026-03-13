@@ -1,0 +1,2036 @@
+[
+  {
+    "nif": "28281323V",
+    "nombre": "ALARCON PRIETO MARIA DEL CARMEN",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta"
+    ],
+    "nota": "Alta 5-03-12",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      }
+    ]
+  },
+  {
+    "nif": "32426994F",
+    "nombre": "BAO GOMEZ MARIA ANTONIA",
+    "tipo": "autonomo",
+    "cnae": "8121",
+    "domicilio": "Sada",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-05-10. Ingresos 133k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Sada. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "32772885R",
+    "nombre": "BRAAS CASAS PABLO FRANCISCO",
+    "tipo": "autonomo",
+    "cnae": "7022",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-02-15",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "47874514Z",
+    "nombre": "CABOT GIL ADRIANA",
+    "tipo": "autonomo",
+    "cnae": "1071",
+    "domicilio": "Arteixo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 1-06-20. Ingresos 205k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión maquinaria panadería o equipamiento hostelería."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Arteixo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "79319670F",
+    "nombre": "CRESPO FERNANDEZ SERGIO LORENZO",
+    "tipo": "autonomo",
+    "cnae": "4399",
+    "domicilio": "Ferrol",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-01-08",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "50442431G",
+    "nombre": "CRESPO LOPEZ ALBERTO JAVIER",
+    "tipo": "autonomo",
+    "cnae": "4120",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 7-09-25. Ingresos 156k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "47363714K",
+    "nombre": "DIAZ GARCIA ABEL",
+    "tipo": "autonomo",
+    "cnae": "4322",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 6-11-30",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "34888227X",
+    "nombre": "DIAZ GARCIA JOSE JUAN",
+    "tipo": "autonomo",
+    "cnae": "4322",
+    "domicilio": "Oleiros",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 4-04-18. Ingresos 112k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "79339103M",
+    "nombre": "DIAZ TEIJEIRO PEDRO MARIA",
+    "tipo": "autonomo",
+    "cnae": "4941",
+    "domicilio": "Cambre",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-07-22",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Cambre. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "53161737C",
+    "nombre": "FERNANDEZ ALDAO JORGE",
+    "tipo": "autonomo",
+    "cnae": "5320",
+    "domicilio": "Arteixo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 4-08-05",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión vehículos mensajería o TIC comercio."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Arteixo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "32972354Z",
+    "nombre": "GONZALEZ ARVELO MANUEL JESUS",
+    "tipo": "autonomo",
+    "cnae": "6201",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 3-10-16",
+    "subvenciones": [
+      {
+        "id": "TR341D",
+        "estado": "aplica",
+        "cuantia": "7.500-12.000€",
+        "motivo": "Alta 3-10-16. Menos de 3 años. Subvención inicio/cuotas SS."
+      },
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR340E",
+        "estado": "posible",
+        "cuantia": "Variable",
+        "motivo": "Si acredita base tecnológica."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6201 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "46896283L",
+    "nombre": "LAGE FERNANDEZ PAULA",
+    "tipo": "autonomo",
+    "cnae": "8559",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 1-03-10",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Aula virtual, gestión alumnos, LMS."
+      }
+    ]
+  },
+  {
+    "nif": "32800039S",
+    "nombre": "LEBORAN RODRIGUEZ ENRIQUE ANTONIO",
+    "tipo": "autonomo",
+    "cnae": "4634",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 3-12-01. Ingresos 143k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "32386684Q",
+    "nombre": "LORENZO ALVAREZ INES",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta"
+    ],
+    "nota": "Alta 2-05-14",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      }
+    ]
+  },
+  {
+    "nif": "47434537G",
+    "nombre": "LUX PAZ ERIKA MERCEDES",
+    "tipo": "autonomo",
+    "cnae": "9602",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-09-20",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "32747835K",
+    "nombre": "MIGUEZ VAZQUEZ LUIS PASCUAL",
+    "tipo": "autonomo",
+    "cnae": "4520",
+    "domicilio": "Culleredo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 5-07-08",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión vehículos mensajería o TIC comercio."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Culleredo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "46896283L",
+    "nombre": "PEREZ LORENZO ROSA MARIA",
+    "tipo": "autonomo",
+    "cnae": "8559",
+    "domicilio": "Ferrol",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 0-02-28",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Aula virtual, gestión alumnos, LMS."
+      }
+    ]
+  },
+  {
+    "nif": "47389105V",
+    "nombre": "ROURA BLANCO ANA MARIA",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-11-11",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "76319881Q",
+    "nombre": "SANCHEZ GONZALEZ LUIS",
+    "tipo": "autonomo",
+    "cnae": "4399",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 7-04-25. Ingresos 101k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "33241619H",
+    "nombre": "TABOADA GARCIA ISABEL",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "Oleiros",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 1-08-17",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "32797400K",
+    "nombre": "VAZQUEZ LEMA CARLOS",
+    "tipo": "autonomo",
+    "cnae": "4120",
+    "domicilio": "Cambre",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 6-06-30. Ingresos 119k",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Cambre. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "33283316Q",
+    "nombre": "VAZQUEZ VIGO JUAN CARLOS",
+    "tipo": "autonomo",
+    "cnae": "4941",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-12-05",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "46913415Q",
+    "nombre": "VIDAL RODRIGUEZ-SABIO MARIA",
+    "tipo": "autonomo",
+    "cnae": "6201",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 2-01-20",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR340E",
+        "estado": "posible",
+        "cuantia": "Variable",
+        "motivo": "Si acredita base tecnológica."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6201 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "44123456P",
+    "nombre": "VIDAL RIOS VAZQUEZ PABLO GONZALO",
+    "tipo": "autonomo",
+    "cnae": "7022",
+    "domicilio": "Ferrol",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-09-15",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B26804559",
+    "nombre": "SALA ATLANTIC S.L.",
+    "tipo": "sociedad",
+    "cnae": "9329",
+    "domicilio": "Narón",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 6-03-09",
+    "subvenciones": [
+      {
+        "id": "TR341D",
+        "estado": "aplica",
+        "cuantia": "Cuotas SS 1ª contrat.",
+        "motivo": "Sociedad nueva 6-03-09. Primera contratación o inversión inicial."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Narón. Contratación indefinida 2026."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Digitalización PYME. Web, CRM, factura electrónica."
+      }
+    ]
+  },
+  {
+    "nif": "B56795354",
+    "nombre": "GUAVA BRANDS S.L",
+    "tipo": "sociedad",
+    "cnae": "4719",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 4-01-10",
+    "subvenciones": [
+      {
+        "id": "TR341D",
+        "estado": "aplica",
+        "cuantia": "Cuotas SS 1ª contrat.",
+        "motivo": "Sociedad nueva 4-01-10. Primera contratación o inversión inicial."
+      },
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión digitalización comercio, e-commerce, TPV."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "E-commerce, SEO, gestión comercial."
+      }
+    ]
+  },
+  {
+    "nif": "B13720453",
+    "nombre": "MFL PSICOLOGIA Y FORMACION S.L",
+    "tipo": "sociedad",
+    "cnae": "8559",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 3-05-15",
+    "subvenciones": [
+      {
+        "id": "TR341D",
+        "estado": "aplica",
+        "cuantia": "Cuotas SS 1ª contrat.",
+        "motivo": "Sociedad nueva 3-05-15. Primera contratación o inversión inicial."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Aula virtual, gestión alumnos, LMS."
+      }
+    ]
+  },
+  {
+    "nif": "B70123456",
+    "nombre": "TECNOSER GALICIA S.L.",
+    "tipo": "sociedad",
+    "cnae": "6201",
+    "domicilio": "Santiago",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 9-11-20",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "TR340E",
+        "estado": "aplica",
+        "cuantia": "Variable",
+        "motivo": "Base tecnológica acreditada. I+D+i"
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "posible",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6201 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "B70234567",
+    "nombre": "CONSTRUCCIONES NORTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "4120",
+    "domicilio": "Ferrol",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 5-03-15",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B70345678",
+    "nombre": "HOSTELERIA MAR DE GALICIA S.L.",
+    "tipo": "sociedad",
+    "cnae": "5610",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 7-06-08",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión digitalización comercio, e-commerce, TPV."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "posible",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "E-commerce, SEO, gestión comercial."
+      }
+    ]
+  },
+  {
+    "nif": "B70456789",
+    "nombre": "GALICIA TRANSPORTE Y LOGISTICA S.L.",
+    "tipo": "sociedad",
+    "cnae": "4941",
+    "domicilio": "Culleredo",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 4-09-12",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Culleredo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B70567890",
+    "nombre": "ASESORÍA EMPRESARIAL ATLANTICO S.L.",
+    "tipo": "sociedad",
+    "cnae": "6920",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 6-01-25",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Digitalización PYME. Web, CRM, factura electrónica."
+      }
+    ]
+  },
+  {
+    "nif": "B70678901",
+    "nombre": "COMERCIAL FERRETERIA DEL NOROESTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "4752",
+    "domicilio": "Oleiros",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 2-04-10",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B70789012",
+    "nombre": "TALLERES MECANICOS UNIDOS S.L.",
+    "tipo": "sociedad",
+    "cnae": "4520",
+    "domicilio": "Arteixo",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 3-07-22",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión vehículos mensajería o TIC comercio."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Arteixo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B70890123",
+    "nombre": "SISTEMAS DE ENERGIA RENOVABLE S.L.",
+    "tipo": "sociedad",
+    "cnae": "3511",
+    "domicilio": "Santiago",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-02-14",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "TR340E",
+        "estado": "aplica",
+        "cuantia": "Variable",
+        "motivo": "Base tecnológica acreditada. I+D+i"
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B70901234",
+    "nombre": "PESCADOS Y MARISCOS COSTA NORTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "4638",
+    "domicilio": "Narón",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 1-10-05",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Narón. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B71012345",
+    "nombre": "GALICIA INDUSTRIAL LIMPIEZA S.L.",
+    "tipo": "sociedad",
+    "cnae": "8121",
+    "domicilio": "Cambre",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-05-30",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Cambre. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B71123456",
+    "nombre": "DIGITAL MARKETING CORUÑA S.L.",
+    "tipo": "sociedad",
+    "cnae": "7311",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 1-03-18",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "TR340E",
+        "estado": "aplica",
+        "cuantia": "Variable",
+        "motivo": "Base tecnológica acreditada. I+D+i"
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Digitalización PYME. Web, CRM, factura electrónica."
+      }
+    ]
+  },
+  {
+    "nif": "B71234567",
+    "nombre": "CARPINTERIA Y MUEBLES GALICIA S.L.",
+    "tipo": "sociedad",
+    "cnae": "1623",
+    "domicilio": "Culleredo",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-08-20",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Culleredo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B71345678",
+    "nombre": "FORMACIÓN PROFESIONAL ATLANTICO S.L.",
+    "tipo": "sociedad",
+    "cnae": "8559",
+    "domicilio": "Santiago",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 9-01-15",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "posible",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Aula virtual, gestión alumnos, LMS."
+      }
+    ]
+  },
+  {
+    "nif": "B71456789",
+    "nombre": "INSTALACIONES ELECTRICAS DEL NORTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "4321",
+    "domicilio": "Ferrol",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 6-11-08",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B71567890",
+    "nombre": "PANADERIA Y PASTELERIA GALICIA S.L.",
+    "tipo": "sociedad",
+    "cnae": "1071",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 4-06-25",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión maquinaria panadería o equipamiento hostelería."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B71678901",
+    "nombre": "SERVICIOS INFORMATICOS EMPRESARIALES S.L.",
+    "tipo": "sociedad",
+    "cnae": "6202",
+    "domicilio": "Santiago",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 2-09-10",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "TR340E",
+        "estado": "aplica",
+        "cuantia": "Variable",
+        "motivo": "Base tecnológica acreditada. I+D+i"
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6202 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "B71789012",
+    "nombre": "DISTRIBUCIONES ALIMENTARIAS NORTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "4639",
+    "domicilio": "Oleiros",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 3-12-18",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B71890123",
+    "nombre": "ARQUITECTURA Y DISEÑO CORUÑA S.L.",
+    "tipo": "sociedad",
+    "cnae": "7111",
+    "domicilio": "A Coruña",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 7-04-22",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "B71901234",
+    "nombre": "INSTALACIONES HIDRAULICAS GALICIA S.L.",
+    "tipo": "sociedad",
+    "cnae": "4322",
+    "domicilio": "Arteixo",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 5-02-28",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Arteixo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "B72012345",
+    "nombre": "AGENCIA DE VIAJES ATLANTICO S.L.",
+    "tipo": "sociedad",
+    "cnae": "7911",
+    "domicilio": "Santiago",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel",
+      "kit"
+    ],
+    "nota": "Alta 8-07-14",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Digitalización PYME. Web, CRM, factura electrónica."
+      }
+    ]
+  },
+  {
+    "nif": "B72123456",
+    "nombre": "SERVICIOS DE SEGURIDAD PRIVADA NORTE S.L.",
+    "tipo": "sociedad",
+    "cnae": "8010",
+    "domicilio": "Ferrol",
+    "tags": [
+      "sociedad",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 6-10-05",
+    "subvenciones": [
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "33445566A",
+    "nombre": "GARCIA MARTINEZ PABLO",
+    "tipo": "autonomo",
+    "cnae": "7022",
+    "domicilio": "Sada",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-05-12",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Sada. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "33556677B",
+    "nombre": "LOPEZ FERNANDEZ CARMEN",
+    "tipo": "autonomo",
+    "cnae": "9602",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta"
+    ],
+    "nota": "Alta 7-08-20",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      }
+    ]
+  },
+  {
+    "nif": "33667788C",
+    "nombre": "MARTINEZ RODRIGUEZ JUAN",
+    "tipo": "autonomo",
+    "cnae": "4520",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 5-11-15",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión vehículos mensajería o TIC comercio."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "33778899D",
+    "nombre": "RODRIGUEZ GONZALEZ MARIA",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "Culleredo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-04-08",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Culleredo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "33889900E",
+    "nombre": "FERNANDEZ LOPEZ JOSE",
+    "tipo": "autonomo",
+    "cnae": "4399",
+    "domicilio": "Oleiros",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-01-25",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "33990011F",
+    "nombre": "GONZALEZ PEREZ ANA",
+    "tipo": "autonomo",
+    "cnae": "8559",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 1-06-12",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Aula virtual, gestión alumnos, LMS."
+      }
+    ]
+  },
+  {
+    "nif": "34001122G",
+    "nombre": "PEREZ MARTINEZ LUIS",
+    "tipo": "autonomo",
+    "cnae": "6201",
+    "domicilio": "Ferrol",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 2-10-05",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR340E",
+        "estado": "posible",
+        "cuantia": "Variable",
+        "motivo": "Si acredita base tecnológica."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6201 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "34112233H",
+    "nombre": "MARTINEZ SANCHEZ ISABEL",
+    "tipo": "autonomo",
+    "cnae": "9329",
+    "domicilio": "Arteixo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-12-18",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Arteixo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "34223344I",
+    "nombre": "SANCHEZ RODRIGUEZ PEDRO",
+    "tipo": "autonomo",
+    "cnae": "4322",
+    "domicilio": "Cambre",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 6-03-22",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "aplica",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Cambre. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "34334455J",
+    "nombre": "LOPEZ GARCIA ELENA",
+    "tipo": "autonomo",
+    "cnae": "7022",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 0-07-30",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  },
+  {
+    "nif": "34445566K",
+    "nombre": "GARCIA FERNANDEZ MIGUEL",
+    "tipo": "autonomo",
+    "cnae": "4941",
+    "domicilio": "Narón",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 7-09-14",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "Narón. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "34556677L",
+    "nombre": "FERNANDEZ MARTINEZ LAURA",
+    "tipo": "autonomo",
+    "cnae": "8121",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta"
+    ],
+    "nota": "Alta 1-02-28",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      }
+    ]
+  },
+  {
+    "nif": "34667788M",
+    "nombre": "RODRIGUEZ LOPEZ DAVID",
+    "tipo": "autonomo",
+    "cnae": "4520",
+    "domicilio": "Oleiros",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 8-11-08",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión vehículos mensajería o TIC comercio."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Oleiros. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "34778899N",
+    "nombre": "GONZALEZ SANCHEZ SOFIA",
+    "tipo": "autonomo",
+    "cnae": "8690",
+    "domicilio": "Culleredo",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 2-04-15",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "PEL",
+        "estado": "aplica",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Culleredo. Contratación indefinida 2026."
+      }
+    ]
+  },
+  {
+    "nif": "34889900O",
+    "nombre": "PEREZ RODRIGUEZ RAUL",
+    "tipo": "autonomo",
+    "cnae": "6201",
+    "domicilio": "Santiago",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "kit"
+    ],
+    "nota": "Alta 3-08-20",
+    "subvenciones": [
+      {
+        "id": "TR341D",
+        "estado": "aplica",
+        "cuantia": "7.500-12.000€",
+        "motivo": "Alta 3-08-20. Menos de 3 años. Subvención inicio/cuotas SS."
+      },
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Si invierte en TIC o software."
+      },
+      {
+        "id": "TR340E",
+        "estado": "posible",
+        "cuantia": "Variable",
+        "motivo": "Si acredita base tecnológica."
+      },
+      {
+        "id": "KITDIGITAL",
+        "estado": "aplica",
+        "cuantia": "Hasta 12.000€",
+        "motivo": "CNAE 6201 IT. CRM, ciberseguridad, web."
+      }
+    ]
+  },
+  {
+    "nif": "34990011P",
+    "nombre": "MARTINEZ GONZALEZ CRISTINA",
+    "tipo": "autonomo",
+    "cnae": "9602",
+    "domicilio": "A Coruña",
+    "tags": [
+      "autonomo",
+      "xunta",
+      "pel"
+    ],
+    "nota": "Alta 9-03-05",
+    "subvenciones": [
+      {
+        "id": "TR341Q",
+        "estado": "aplica",
+        "cuantia": "Hasta 7.000 60%",
+        "motivo": "Inversión en activos productivos, maquinaria o digitalización."
+      },
+      {
+        "id": "TR341R",
+        "estado": "posible",
+        "cuantia": "Salario sustituto",
+        "motivo": "Si contrata sustituto para conciliación."
+      },
+      {
+        "id": "PEL",
+        "estado": "posible",
+        "cuantia": "Hasta 10.000€",
+        "motivo": "Si contrata indefinido con incremento empleo neto."
+      }
+    ]
+  }
+]
