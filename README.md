@@ -99,3 +99,6 @@ GitHub Actions tiene permisos de escritura para actualizar archivos automáticam
 ## 💬 Soporte
 
 Para dudas o mejoras, crea un Issue en este repositorio.
+
+
+<!-- Workflow test trigger -->
