@@ -27,6 +27,9 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
+            - name: Run matcher
+      run: python matcher.py
+
       - name: Send Slack Notification
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
